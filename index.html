@@ -1,1 +1,190 @@
- 
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Milo So">
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+		<link rel="stylesheet" href="./lib/bootstrap-4.3.1-dist/css/bootstrap.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="./lib/fontawesome-5.8.2-dist/css/all.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
+	</head>
+	<body class="container-fluid">		
+		<header class="container">
+			<div id="header" class="row">
+				<div id="logo" class="col-lg-6">
+				
+				</div>
+				<div class="col-lg-6">
+					<div id="details">
+						Fellerstraße 2, 42555 Velbert
+						<span class="fas fa-map-marked-alt"></span>
+						<br>
+						(0 20 52) 33 26
+						<span class="fas fa-mobile-alt"></span>
+						<br>
+						(0 20 52) 33 26
+						<span class="fas fa-fax"></span>
+						<br>
+						<a href="mailto:autolackhg@gmx.de">
+							autolackhg@gmx.de
+							<span class="far fa-envelope"></span>
+						</a>						
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-dark">		
+			  <a class="navbar-brand" href="#">H&G Autolackiererei Velbert</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#intersection-services">Leistungen</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#section-map">Anfahrt</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#section-footer">Kontakt</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>						
+		</header>
+		<main class="container-fluid">
+			<div id="section-about" class="container">
+				<section class="row">
+					<div class="col-lg-12">
+						<div class="cropped-image">
+						  <img src="./img/photo-start.jpg" width="242" height="363" class="fit_contain" />
+						</div>
+					</div>
+				</section>
+			</div>
+			<div id="intersection-services">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h2>Unsere Leistungen im Überblick</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div id="section-services">
+				<div class="container">
+					<section class="row text-center">
+						<div class="col-lg-3">
+							<div class="service-logo-wrapper">
+								<div class="service-logo">
+									<span class="fas fa-spray-can fa-3x"></span>
+								</div>
+							</div>
+							<div>
+								<h3>Lackererei</h3>
+								<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</h5>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="service-logo-wrapper">
+								<div class="service-logo">
+									<span class="fas fa-car-side fa-3x"></span>
+								</div>
+							</div>
+							<div>
+								<h3>Karosserie Schäden</h3>
+								<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</h5>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="service-logo-wrapper">
+								<div class="service-logo">
+									<span class="fas fa-spray-can fa-3x"></span>
+								</div>
+							</div>
+							<div>
+								<h3>Scheiben Service</h3>
+								<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</h5>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="service-logo-wrapper">
+								<div class="service-logo">
+									<span class="fas fa-spray-can fa-3x"></span>
+								</div>
+							</div>
+							<div>
+								<h3>Smart Repair</h3>
+								<h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</h5>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div id="section-map" class="container">
+				<section class="row">				
+					<div class="col-lg-8 jumbotron" style="padding-bottom:0px;">
+						<div id="map">						
+						</div>
+					</div>
+					<div class="col-lg-4 jumbotron text-center" style="padding-bottom:50px;  padding-top: 75px;">
+						<h3>Ihre H&G Autolackererei Werkstatt</h3>
+						</br>
+						<h4>Fellerstraße 2</h4>
+						<h4>42555 Velbert <span class="fas fa-map-marked-alt"></span></h4>
+						</br>
+						<h4><a href="https://goo.gl/maps/yAH2YR9qmWsjYoK97" class="btn btn-outline-primary">Zum Routeplanner</a></h4>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div id="section-footer" class="container">
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<div class="caption">
+							<h3>Kontakt</h3>
+							</br>
+							<h4>Hahn & Gardas Autolackiererei</h4>
+							<h4>Fellerstraße 2, 42555 Velbert <span class="fas fa-map-marked-alt"></span></h4>
+							</br>
+							<h4>Tel.: (02052) 3326 <span class="fas fa-mobile-alt"></span></h4>
+							<h4>Fax: (02052) 332611 <span class="fas fa-fax"></span></h4>
+							</br>
+							<h4>Email: autolackhg@gmx.de <span class="far fa-envelope"></span></h4>
+						</div>
+					</div>
+					<div class="col-lg-6 text-center">
+						<div class="caption">
+							<h3>Öffnungszeiten</h3>
+							</br>
+							<h4>Montag bis Freitag 10:00 - 18:00</h4>
+							<h4>Samstag 10:00 - 14:00</h4>
+						</div>
+					</div>		
+				</div>
+				<div class="legal text-center">
+					<p class="copyright text-muted small">
+						Copyright © H&G Autolackererei 2019. All rights reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+		<div id="backToTop">
+			<a href="#"><span class="fas fa-arrow-up fa-4x"></span></a>
+		</div>
+		<script src="./lib/jQuery-3.4.1-dist/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+		<script src="./lib/bootstrap-4.3.1-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>		
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+		<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html>
